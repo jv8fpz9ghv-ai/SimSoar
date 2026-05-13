@@ -431,6 +431,20 @@ textarea{resize:vertical;min-height:100px}
 }
 </style>
 </head>
+
+<script type="module">
+import { createClient } from 'https://esm.sh/@supabase/supabase-js'
+
+const supabaseUrl = 'https://hdueuzkflilrljqfzslv.supabase.co/rest/v1/'
+const supabaseKey = 'sb_publishable_c99MOQo-83g_ZeNvu3dq-Q_t74N7Xhu'
+
+const supabase = createClient(supabaseUrl, supabaseKey)
+
+window.supabase = supabase
+
+console.log("Supabase verbunden")
+</script>
+
 <body>
 
 <!-- ════ NAV ════ -->
